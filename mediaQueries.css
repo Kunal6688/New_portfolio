@@ -202,11 +202,18 @@
         display: grid;
         grid-template-columns:repeat(3,100px) ;
         grid-template-rows: auto;
-        grid-gap: 1rem;
+        grid-gap: .5rem;
         justify-content: center;
       }
 
+    .tech-icons ul li img{
+        height: 30px;
+        width: 30px;
+    }
 
+    .tech-icons ul li p{
+        font-size: .8rem;
+    }
 
     
 
@@ -216,8 +223,8 @@
       
     .frame{
         
-        height: 490px;
-        width: 320px;
+        height: 510px;
+        width: 300px;
 
     }
 
@@ -226,7 +233,7 @@
 
     .pro-img{
         /* border: .5px solid gray; */
-        width: 320px;
+        width: 300px;
         height: 160px;
 
         
