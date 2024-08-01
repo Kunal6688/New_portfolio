@@ -84,6 +84,10 @@ body a{
   justify-content: center;
 }
 
+.sideshow{
+  display: none;
+}
+
 .home-content{
   /* background-color: antiquewhite; */
   /* width: auto; */
@@ -169,6 +173,7 @@ body a{
 }
 
 .arrange p{
+  font-size: .6rem;
   margin: 0;
 }
 
