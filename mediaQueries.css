@@ -131,12 +131,25 @@
         display: none;
     }
 
+    .theme-switch{
+        display: flex;
+        margin: 1rem;
+        justify-content: end;
+        align-items: center;
+        
+      }
+
     .home-content{
         height: 17rem;
         display: flex;
         flex-direction: column-reverse;
         align-items:center ;
     }
+
+    .about-container{
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
 
     .aboutMe {
         align-items: start;

@@ -39,3 +39,53 @@ const updateSlider = () => {
 
 $right.on('click', nextSlide);
 $left.on('click', prevSlide);
+
+
+
+
+
+
+// --------------------------------------Theme Switch-------------------------------------------
+
+let isDark = true;
+
+$(".theme-switch img").click(function() {
+    if (isDark) {
+        isDark = false;
+        $(".theme-switch img").attr("src","./Svg/toggle-off.svg")
+        $(":root").css("--Background", "#ffffff");
+        $(":root").css("--headingColor", "#42446e");
+        $(":root").css("--color", "#666666");
+        $(":root").css("--projectBackground", "#fefefe");
+        $(":root").css("--projectColor", "#000000");
+        $(":root").css("--boxShadow","0 4px 8px rgba(0, 0, 0, 0.1)");
+
+
+    } else {
+        isDark = true;
+        $(".theme-switch img").attr("src","./Svg/toggle-on.svg")
+        $(":root").css("--Background", "#191919");
+        $(":root").css("--headingColor", "#d9d9d9");
+        $(":root").css("--color", "#a7a7a7");
+        $(":root").css("--projectBackground", "#363636");
+        $(":root").css("--projectColor", "#cccccc");
+        $(":root").css("--boxShadow","0 0 10px 5px rgba(255, 255, 255, 0.689)");
+
+    }
+});
+
+
+
+
+// -------------------------------read more project-------------------------------------
+
+// $('#toggle-button').click(function() {
+//     var para = $('#project-para');
+//     if (para.hasClass('expanded')) {
+//         para.removeClass('expanded');
+//         $(this).text('Read More');
+//     } else {
+//         para.addClass('expanded');
+//         $(this).text('Read Less');
+//     }
+// });

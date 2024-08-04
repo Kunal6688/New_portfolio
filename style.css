@@ -3,15 +3,28 @@
   margin: 0;
 }
 
+:root{
+  --Background:#ffffff;
+  --headingColor:#42446e;
+  --color:#666666;
+  --projectBackground:#fefefe;
+  --projectColor:#000000;
+  --boxShadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#ffffff ;
+    background-color:var(--Background) ;
+}
+
+.heading-size{
+  font-size: 1.6rem;
 }
 
 body a{
   text-decoration: none;
-  color: #42446e;
+  color: var(--headingColor);
 }
 
   /* h1{
@@ -24,6 +37,25 @@ body a{
     padding: 6px; 
   } */
 /* ------------------------Header--------------------- */
+.head{
+  display: flex;
+  /* justify-content: space-evenly;  */
+}
+header{
+  flex: 9;
+}
+
+.theme-switch{
+  display: flex;
+  align-items: center;
+  flex:1;
+}
+
+.theme-switch img{
+  height: 25px;
+  width:  25px;
+  cursor: pointer;
+}
 
 .navbar{
     height: 80px;
@@ -104,7 +136,7 @@ body a{
 }
 
 .content h1{
-  color: #42446e;
+  color: var(--headingColor);
   font-size: 2rem;
   font-weight: 700;
 }
@@ -131,28 +163,32 @@ body a{
   margin-left: 2rem;
 }
 
+.about-container{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 
 
 .about h2{
   text-align: center;
   margin-bottom: 2rem;
-  color: #42446e;
+  color: var(--headingColor);
   font-weight: 700;
 }
 
 .about p{
-  color: #666666;
+  color: var(--color);
 }
 
 .about h3{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #42446e;
+  color: var(--headingColor);
   font-weight: 400;
 }
 
 .about h5{
-  color: #42446e;
+  color: var(--color) ;
 }
 
 .about ul{
@@ -186,9 +222,13 @@ body a{
 }
 
 .arrange img {
-  color:  #666666;
+  color:  var(--color);
 }
 
+
+.education-list-line{
+  border-bottom: 2px solid white;
+}
 
 
 /* --------------------------Tech-Stack-------------------------------- */
@@ -202,13 +242,12 @@ body a{
 }
 
 .heading h2{
-  color: #42446e;
-  font-size: 2rem;
+  color: var(--headingColor);
   font-weight: 600;
 }
 
 .heading p{
-  color: #666666;
+  color: var(--color);
 }
 
 .tech-icons{
@@ -249,9 +288,9 @@ body a{
 
 
 .project-card{
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: var(--boxShadow);
   border-radius: 1rem;
-  background-color: #fcfcfc;
+  background-color: var(--projectBackground);
   width: 320px;
   height: 460px;
   display: flex;
@@ -271,6 +310,8 @@ body a{
 }
 
 .project-content{
+  background-color: var(--projectBackground);
+  color: var(--projectColor);
   font-size: .8rem;
   display: flex;
   flex-direction: column;
@@ -278,6 +319,18 @@ body a{
   align-items: start;
   justify-content: center;
 }
+
+.project-content p , .project-content h3{
+    color: var(--projectColor);
+
+}
+
+.project-para {
+height: 116px;
+width: 228px;
+
+}
+
 
 .project-content p span{
   font-weight: 900;
@@ -310,6 +363,10 @@ body a{
   margin-top: 15rem;
 }
 
+.email h1{
+  color: var(--color);
+}
+
 
 
 .detail{
@@ -334,16 +391,18 @@ body a{
 .contact{
   display: flex;
   gap:3rem;
+  color: var(--color);
 }
 
 .contact a{
   text-decoration: underline;
-  color:black;
+  color:var(--color);
 }
 
 
 
 .description{
+  color: var(--color);
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
