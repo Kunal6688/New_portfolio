@@ -325,11 +325,12 @@ header{
 
 }
 
-.project-para {
-height: 116px;
-width: 228px;
+  .project-para {
+  height: 116px;
+  width: 288px;
+  margin-bottom: 16px;
 
-}
+  }
 
 
 .project-content p span{
